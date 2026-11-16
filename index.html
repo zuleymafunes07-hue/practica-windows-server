@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguridad Informática Básica - Zuleyma Funes</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, sans-serif; scroll-behavior: smooth; }
+    body { background-color: #f4f7f6; color: #333; line-height: 1.6; }
+    
+    /* Menú dinámico */
+    nav { background-color: #1b263b; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+    nav ul { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; }
+    nav ul li a { display: block; color: #fff; text-decoration: none; padding: 15px 25px; font-weight: bold; transition: background 0.3s, transform 0.2s; }
+    nav ul li a:hover { background-color: #415a77; transform: translateY(-2px); }
+
+    header { background: linear-gradient(135deg, #0d1b2a, #415a77); color: white; text-align: center; padding: 60px 20px; }
+    header h1 { font-size: 2.2rem; margin-bottom: 10px; }
+
+    section { max-width: 900px; margin: 30px auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    h2 { color: #1b263b; border-bottom: 2px solid #415a77; padding-bottom: 8px; margin-bottom: 15px; }
+
+    .grid-ps { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 15px; }
+    .card { padding: 20px; border-radius: 6px; }
+    .problema { background-color: #ffe5e5; border-left: 5px solid #d90429; }
+    .solucion { background-color: #e8f5e9; border-left: 5px solid #2b9348; }
+
+    footer { background-color: #0d1b2a; color: #e0e1dd; text-align: center; padding: 25px 15px; margin-top: 40px; }
+    footer p { margin: 5px 0; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#informacion">Información Básica</a></li>
+      <li><a href="#problemas">Problemas y Soluciones</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header id="inicio">
+    <h1>Seguridad Informática en Redes y Servidores</h1>
+    <p>Práctica de Administración de Sistemas Operativos - UNIVO</p>
+  </header>
+
+  <section id="informacion">
+    <h2>Información Básica</h2>
+    <p>La seguridad informática consiste en proteger la integridad, confidencialidad y disponibilidad de la información dentro de los sistemas y redes. En entornos de servidores como Windows Server, aplicar buenas prácticas evita accesos no autorizados y pérdida de datos críticos.</p>
+  </section>
+
+  <section id="problemas">
+    <h2>Problemas y Soluciones Comunes</h2>
+    <div class="grid-ps">
+      <div class="card problema">
+        <h3>Problema 1: Contraseñas débiles</h3>
+        <p>El uso de claves sencillas facilita ataques de fuerza bruta en servicios remotos como RDP.</p>
+      </div>
+      <div class="card solucion">
+        <h3>Solución 1: Políticas robustas</h3>
+        <p>Implementar contraseñas complejas con mayúsculas, números y símbolos, además de limitar intentos de inicio de sesión.</p>
+      </div>
+      <div class="card problema">
+        <h3>Problema 2: Permisos excesivos</h3>
+        <p>Dar privilegios de administrador a todos los usuarios compromete la estabilidad del servidor compartido.</p>
+      </div>
+      <div class="card solucion">
+        <h3>Solución 2: Delegación por grupos</h3>
+        <p>Crear Unidades Organizativas (UO) y asignar permisos estrictamente necesarios a cada carpeta y usuario.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contacto">
+    <p><strong>Desarrollado por:</strong> Zuleyma Rosmery Funes Funes</p>
+    <p><strong>Carrera:</strong> Ingeniería en Desarrollo de Software - UNIVO</p>
+    <p><strong>Correo de contacto:</strong> zuleyma.funes@univo.edu.sv</p>
+  </footer>
+
+</body>
+</html>
